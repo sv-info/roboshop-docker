@@ -12,7 +12,7 @@ services:
     depends_on:
     - mongodb
   redis:
-    image: redis7.0
+    image: redis:7.0
     container_name: redis
   user:
     image: devopsrinu/user:v1
