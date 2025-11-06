@@ -4,7 +4,7 @@ networks:
     name: roboshop
 services:
   mongodb:
-    images: devopsrinu/mongodb:v1 
+    image: devopsrinu/mongodb:v1 
     container_name: mongodb
   catalogue:
     image: devopsrinu/catalogue:v1
