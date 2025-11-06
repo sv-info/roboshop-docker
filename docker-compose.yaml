@@ -56,3 +56,14 @@ services:
     - rabbitmq
     - cart
     - user
+  forntend:
+    images: devopsrinu/frontned:v1
+    container_name: frontend
+    port:
+    - "80:80"
+    depends_on:
+    - catalogue
+    - cart
+    - user
+    - shipping
+    - payment
