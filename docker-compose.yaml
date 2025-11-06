@@ -56,8 +56,8 @@ services:
     - rabbitmq
     - cart
     - user
-  forntend:
-    images: devopsrinu/frontned:v1
+  frontend:
+    image: devopsrinu/frontend:v1
     container_name: frontend
     port:
     - "80:80"
