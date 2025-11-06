@@ -22,7 +22,7 @@ services:
     - mongodb
   cart:
     image: devopsrinu/cart:v1
-    container_name: cartt
+    container_name: cart
     depends_on:
     - catalogue
     - redis
@@ -30,7 +30,7 @@ services:
     image: devopsrinu/mysql:v1
     container_name: mysql
   shipping:
-    image: devopsrinu/shopping:v1
+    image: devopsrinu/shipping:v1
     container_name: shipping
     depends_on:
     - mysql
