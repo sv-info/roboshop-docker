@@ -9,7 +9,7 @@
 #     CATALOGUE_PORT="8080"
 # CMD ["node", "server.js"]
 
-FROM node:20-alpine3.21 AS buildercd 
+FROM node:20-alpine3.21 AS builder
 WORKDIR /opt/server
 COPY package.json .
 COPY *.js .
